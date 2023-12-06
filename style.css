@@ -1,0 +1,274 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=IBM+Plex+Mono&family=Lato&family=Montserrat:wght@300;500&family=Open+Sans:ital,wght@1,400;1,500&family=Orbitron&family=Poppins:ital@1&family=Roboto:wght@100;300&family=Sometype+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=IBM+Plex+Mono&family=Lato&family=Montserrat:wght@300;500&family=Open+Sans:ital,wght@1,400;1,500&family=Orbitron&family=Poppins:ital@1&family=Roboto:wght@100;300&family=Sometype+Mono&display=swap');
+
+:root{
+ --background: rgb(55, 51, 69);
+ --background1: #2a222f;
+  --background2: #e8a75d;
+  --background3: #c45a51;
+  --background4:  #3e3e62;
+  --background5: #3d2b48;
+ --blue: #5b6e8f;
+ --offwhite: #dbcdaf;
+ --text:#28202c;
+ --moretext: #e1c5af;
+}
+
+
+body{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ line-height: 1.6;
+ 
+ background-color: var(--background1);
+ color: var(--text);
+
+}
+
+
+main{
+
+    padding: 2rem;
+    font-family: "Orbitron";
+    border-radius: 10px;
+    min-height: 100vh;
+   
+
+   
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem;
+    border-radius: 15px;
+    background-color: var(--background3);
+    height: 450px;
+    clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 50px));
+}
+
+
+
+li, a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--moretext);
+    font-size: 2.5rem;
+    margin: 2rem;
+    font-family: IBM Plex Mono;
+    transition: all 0.3s ease 0s;
+   
+}
+
+
+.list:hover{
+   color: var(--background2);
+   
+}
+
+ul li{
+
+   padding: 15px;
+   list-style: none;
+}
+
+
+button{
+   
+background: none;
+    font-family: IBM Plex Mono;
+    color: var(--offwhite);
+    text-transform: uppercase;
+    border: 2px solid;
+    border-radius: 10px;
+    font-size: 2.2rem;
+    padding: 0.5rem;
+    transition: all 0.3s ease 0s;
+    }
+
+    .animation:hover,
+    .animation:focus{
+        box-shadow: 0 0.3em 0.8em -0.1em var(--background2);
+        transform: translateY(-0.25em);
+       
+    }
+
+    .item{
+        background-color: var(--background2);
+        margin: 5rem;
+    
+        border-radius: 10px;
+        height: 500px;
+       }
+
+    .box{
+
+        clip-path: polygon(0 0,100% 50px,100% 100%,0 100%);
+        margin-top: -190px;
+    }
+
+.item h1{
+    padding: 5rem;
+    text-transform: uppercase;
+    font-family: IBM Plex Mono;
+    line-height: 0.9;
+    transform: skew(-10deg);
+    text-shadow: #884148  1px 1px,  #884148  2px 2px,  #884148  3px 3px,  #884148  4px 4px;
+    min-height: 100vh;
+    font-size: 10rem;
+    color: var(--moretext);
+    
+    
+  
+}
+
+.item span{
+    color: var(--offwhite);
+    font-size: 15rem;
+    letter-spacing: 35px;
+}
+
+
+.item p{
+    font-family: IBM Plex Mono;
+    padding: 4px;
+}
+
+.grid-text{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  place-items: center;
+}
+
+.grid-text1, .grid-text2{
+    background-color: var(--background4);
+    height: 150px;
+    width: 500px;
+    border-radius: 15px;
+    margin: 5rem;
+}
+
+h2{
+    font-size: 5rem;
+    background: rgb(191,84,96);
+background: linear-gradient(90deg, rgba(191,84,96,1) 0%, rgba(255,144,73,1) 35%, rgba(255,228,170,1) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+   
+}
+
+
+.hidden{
+    opacity: 0;
+    transition: all 1.2s ease-in-out;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}  
+
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+    place-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background-color: var(--background5);
+    margin: 5rem;
+    border-radius: 15px;
+    word-spacing: 10px;
+    
+}
+
+.text-grid{
+    text-align: center;
+    padding: 50px;
+}
+
+.grid-item-1{
+    height: 350px;
+    width: 350px;
+    background-color: #d69563;
+    border-radius: 15px;
+    padding: 25px;
+    transition: 0.45s ease ;
+  
+  
+}
+
+.grid-item-1:hover{
+/* From https://css.glass */
+background: rgba(222, 219, 255, 0.39);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+backdrop-filter: blur(0.5px);
+-webkit-backdrop-filter: blur(0.5px);
+transform: translateY(-0.35em);
+}
+
+
+
+.grid-item-2{
+    height: 350px;
+    width: 350px;
+    background-color: #bd6d5b;
+    border-radius: 16px;
+    padding: 25px;   
+    transition: 0.45s ease ;
+
+}
+
+.grid-item-2:hover{
+/* From https://css.glass */
+background: rgba(222, 219, 255, 0.39);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0.5px);
+-webkit-backdrop-filter: blur(0.5px);
+transform: translateY(-0.35em);
+}
+
+.grid-item-3{
+    height: 350px;
+    width: 350px;
+    background-color: #9c4957;
+    border-radius: 15px;
+    padding: 25px;
+    transition: 0.45s ease ;
+   
+    }
+
+.grid-item-3:hover{
+/* From https://css.glass */
+background: rgba(222, 219, 255, 0.39);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0.5px);
+-webkit-backdrop-filter: blur(0.5px);
+
+transform: translateY(-0.35em);
+
+}
+
+.play-button{
+    margin-top: 100px;
+}
+
+footer{
+    min-height: 100vh;
+}
