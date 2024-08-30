@@ -1,2 +1,3 @@
-# kidzhavefunz
-game website for children
+KidzHaveFun 
+
+Unfinished school project
